@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48766401}
   - component: {fileID: 48766402}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpicyFloorBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 189259391}
   - component: {fileID: 189259392}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloorBox (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,6 +374,7 @@ GameObject:
   - component: {fileID: 325500479}
   - component: {fileID: 325500482}
   - component: {fileID: 325500483}
+  - component: {fileID: 325500484}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -487,7 +488,7 @@ Transform:
   m_GameObject: {fileID: 325500478}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.56, y: -2.91, z: 0}
+  m_LocalPosition: {x: -3.33, y: -2.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -535,13 +536,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestMode: 0
   speed: 0
-  jumpForce: 3
-  isGrounded: 0
-  groundCheck: {fileID: 0}
+  jumpForce: 7
+  isGrounded: 1
+  groundCheck: {fileID: 1246069481}
   isGroundLayer:
     serializedVersion: 2
-    m_Bits: 0
-  groundCheckRadius: 0
+    m_Bits: 8
+  groundCheckRadius: 0.1
+--- !u!95 &325500484
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325500478}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f491db83e16ca64790970ab494fa877, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &439182579
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 439182580}
   - component: {fileID: 439182581}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloorBox (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -629,7 +651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 509522640}
   - component: {fileID: 509522641}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clouds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +820,7 @@ GameObject:
   m_Component:
   - component: {fileID: 546631950}
   - component: {fileID: 546631951}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +893,7 @@ GameObject:
   m_Component:
   - component: {fileID: 590721294}
   - component: {fileID: 590721295}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clouds (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 614255830}
   - component: {fileID: 614255831}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,7 +1043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 645030559}
   - component: {fileID: 645030560}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GreyPipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1098,7 +1120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 762138950}
   - component: {fileID: 762138951}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1171,7 +1193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 766314906}
   - component: {fileID: 766314907}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clouds (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1248,7 +1270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 847058160}
   - component: {fileID: 847058161}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloorBox (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1325,7 +1347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861930030}
   - component: {fileID: 861930031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GreenPipe (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1402,7 +1424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 862959909}
   - component: {fileID: 862959910}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloorBox (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1479,7 +1501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 880240541}
   - component: {fileID: 880240542}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GreyBricks (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1556,7 +1578,7 @@ GameObject:
   m_Component:
   - component: {fileID: 888898006}
   - component: {fileID: 888898007}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GreenPipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1633,7 +1655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 997086622}
   - component: {fileID: 997086623}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1706,7 +1728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1089912785}
   - component: {fileID: 1089912786}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloorBox (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1783,7 +1805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1166111517}
   - component: {fileID: 1166111518}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BluePipe (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1860,7 +1882,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1204563398}
   - component: {fileID: 1204563399}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zaworudo (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1937,7 +1959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1233076713}
   - component: {fileID: 1233076714}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zaworudo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2029,7 +2051,7 @@ Transform:
   m_GameObject: {fileID: 1246069480}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3589803, y: 6.8355765, z: -0.04805086}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2045,7 +2067,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1282269922}
   - component: {fileID: 1282269923}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zaworudo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2122,7 +2144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337096766}
   - component: {fileID: 1337096767}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloorBox (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2199,7 +2221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507728850}
   - component: {fileID: 1507728851}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GreyBricks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2276,7 +2298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1580950940}
   - component: {fileID: 1580950941}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clouds (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2353,7 +2375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1602714859}
   - component: {fileID: 1602714860}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloorBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2430,7 +2452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1731488548}
   - component: {fileID: 1731488549}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2503,7 +2525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768886923}
   - component: {fileID: 1768886924}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloorBox (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2580,7 +2602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1772065567}
   - component: {fileID: 1772065568}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2653,7 +2675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1808637990}
   - component: {fileID: 1808637991}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2791,7 +2813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1867893338}
   - component: {fileID: 1867893339}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2864,7 +2886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1875922663}
   - component: {fileID: 1875922664}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FloorBox (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2941,7 +2963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1884457243}
   - component: {fileID: 1884457244}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BluePipe (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3018,7 +3040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1992519916}
   - component: {fileID: 1992519917}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BluePipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3095,7 +3117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2057364040}
   - component: {fileID: 2057364041}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GreyBricks (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

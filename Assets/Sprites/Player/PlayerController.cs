@@ -17,15 +17,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask isGroundLayer;
     [SerializeField] private float groundCheckRadius;
 
-
+   
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
 
         if (speed <= 0)
         {
@@ -77,7 +79,7 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = moveDirection;
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
@@ -85,8 +87,14 @@ public class PlayerController : MonoBehaviour
         //Sprite Flipping
         if (xInput != 0) sr.flipX = (xInput < 0);
 
+        anim.SetFloat("speed", Mathf.Abs(xInput));
+        anim.SetBool("isGrounded", isGrounded);
 
-        //if (xInput > 0 && sr.flipX || xInput < 0 && )
+        if (Input.GetButtonDown("Fire1"))
+        {
+            anim.SetTrigger("attack");
+        }
+
 
 
 
